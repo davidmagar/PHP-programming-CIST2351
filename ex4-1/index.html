@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Subscription Purchase</title>
+</head>
+<body>
+	<div>
+		<h1>Magazine Subscription </h1>
+		<h3>Monthly $5.99, Yearly $59.99</h3>
+		<form action="handle_subscription.php" method="post">
+			<p>Subscribe our Weekly Magazine</p>
+
+			<p>Number of subscriptions: <input type="text" name="subscriptions" size="3" value="1" min="1"></p>
+
+			<p>Number of Years for the subscription: <input type="text" name="year" size="3" value="2" min="1"></p>
+
+			<p>Price: <select name="price">
+				<option value="5.99">Monthly</option>
+				<option value="59.99">Yearly</option>
+			</select></p>
+
+			<p>Tax: <input type="tax" name="tax" size="3" value="7.00">%</p>
+
+			<p>Type of Delivery: <select name="shipping">
+				<option value="0.00">Online</option>
+				<option value="5.50">Mail</option>
+				<option value="10.95">FedEx</option>
+			</select></p>
+
+			<input type="submit" name="Subscribe" value="Subscribe Now">
+
+			
+		</form>
+	</div>
+
+</body>
+</html>
